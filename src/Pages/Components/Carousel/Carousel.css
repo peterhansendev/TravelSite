@@ -30,7 +30,7 @@
 }
 
 .carousel {
-  width: 65vw !important;
+  width: 50vw !important;
   height: 50vh;
   min-width: 450px;
   border-radius: 40px;
@@ -42,8 +42,9 @@
   min-height: 400px;
   min-width: 450px;
   object-fit: cover;
-  width: 65vw !important;
+  width: 50vw !important;
   height: 50vh;
+
 }
 
 .close-btn {
@@ -57,3 +58,16 @@
 }
 
 
+@media only screen and (max-width: 1300px) {
+  .carousel {
+    width: 65vw !important;
+    height: 50vh;
+   
+  }
+  
+  .carousel img {
+  
+    width: 65vw !important;
+    height: 50vh;
+  }
+}
