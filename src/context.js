@@ -3,7 +3,7 @@ const AppContext = createContext();
 
 const AppProvider = ({ children }) => {
   const [locationName, setLocationName] = useState("");
-  const [adventure, setAdventure] = useState(true);
+  const [adventure, setAdventure] = useState(false);
   const [beach, setBeach] = useState(false);
   const [shopping, setShopping] = useState(false);
   const [calendar, setCalendar] = useState(false);
