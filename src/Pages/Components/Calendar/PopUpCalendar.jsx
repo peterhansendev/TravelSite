@@ -20,18 +20,20 @@ function PopUpCalendar() {
     setDate,
   } = useGlobalContext();
 
-  const [className, setClassName] = useState("display-none");
+  const [className, setClassName] = useState(1);
 
   useEffect(() => {
     if (calendar === true) {
       setTimeout(() => {
         setClassName("carouselDiv");
       }, "200");
-    } else if (calendar === false) {
+    } else if (calendar === false && className !== 1) {
       setClassName("delay");
       setTimeout(() => {
         setClassName("display-none");
       }, "200");
+    } else {
+      setClassName("display-none");
     }
   }, [calendar]);
 

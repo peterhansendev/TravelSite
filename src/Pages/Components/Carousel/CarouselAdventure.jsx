@@ -7,7 +7,7 @@ import { useState, useEffect } from "react";
 
 function ImgCarouselAdventure() {
   const { setBeach, setAdventure, setShopping, adventure } = useGlobalContext();
-  const [className, setClassName] = useState("display-none");
+  const [className, setClassName] = useState(1);
 
 
   useEffect(() => {
@@ -16,11 +16,13 @@ function ImgCarouselAdventure() {
         setClassName("carouselDiv");
       }, "200"); 
    
-    } else if (adventure === false) {
+    } else if (adventure === false && className !== 1) {
       setClassName("delay")
       setTimeout(() => {
         setClassName("display-none");
       }, "200"); 
+    } else {
+      setClassName("display-none");
     }
   }, [adventure]);
 
