@@ -1,0 +1,269 @@
+.react-calendar {
+  width: 65vw !important;
+  height: 50vh;
+  min-width: 500px;
+  min-height: 308px;
+  border: 3px solid #003399;
+  border-radius: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #38b3ffa9;
+  overflow: hidden;
+  left: 0;
+  z-index: 2;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: -5px;
+
+}
+
+
+.react-calendar__tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 25px;
+
+  height: 7.8vh;
+  color: black;
+  background: rgba(165, 231, 255, 0.9);
+  border-radius: 50px;
+
+}
+.border {
+  background-color: rgb(8, 115, 255);
+
+}
+.react-calendar__tile--hasContent {
+  border: 2px solid black;
+  color: palegreen;
+
+}
+
+.react-calendar__tile--hasActive {
+  color: red;
+}
+
+.react-calendar__month-view__days {
+  display: grid !important;
+  grid-template-columns: 14% 14% 14% 14% 14% 14% 14%;
+  grid-gap: 3px;
+
+}
+
+.react-calendar__month-view__days__day--weekend {
+  color: #d10000;
+}
+
+.react-calendar__month-view__days__day--neighboringMonth {
+  color: #646464;
+}
+
+.react-calendar__tile:enabled {
+  font-size: 1rem;
+}
+
+
+.react-calendar__tile:enabled:hover {
+  background-color: #1c39bb;
+  border-radius: 50px;
+  color: white;
+}
+
+
+.react-calendar__tile:enabled:focus {
+  background-color: blue;
+  border-radius: 50px;
+  color: white;
+}
+
+.react-calendar__tile--now {
+  background: #4fd9ff;
+  border-radius: 50px;
+}
+
+.react-calendar__tile--now:enabled:hover,
+.react-calendar__tile--now:enabled:focus {
+  background: #ffffa9;
+  color: black;
+
+}
+
+.react-calendar__navigation button {
+  color: #2b2206;
+  min-width: 44px;
+  margin-top: 15px;
+  font-size: 1.5rem;
+
+}
+
+.react-calendar__navigation {
+  margin: 0;
+  display: flex;
+  align-items: flex-start;
+
+
+}
+
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+  background-color: transparent;
+  color: black;
+}
+
+
+.inputForm {
+  width: 23vw;
+  min-width: 350px;
+  background-color: white;
+  height: 110px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+
+}
+
+.addEvent {
+  text-align: center;
+  font-size: 1.5rem;
+  color: black;
+  border: 2px solid transparent;
+  margin-left: 35px;
+  border-radius: 10px;
+  width: 80%;
+  margin-top: 2px;
+
+}
+
+.addEvent::placeholder {
+  color: rgba(0, 0, 0, 0.787);
+}
+
+.addEvent:hover {
+  color: blue;
+  cursor: pointer;
+  border: 2px solid #00b4cc;
+  background-color: rgba(255, 255, 255, 0.445);
+  color: black;
+}
+
+.inputForm button {
+  font-size: 1.5rem;
+  width: 100%;
+}
+
+.inputForm button:hover {
+  color: blue;
+  cursor: pointer;
+}
+
+.datePickerDiv {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: auto;
+
+}
+
+/* .date-div {
+  width: 100%;
+  border-left: 1px solid #bbb;
+  height: 50%;
+  line-height: 25px;
+} */
+
+.datePickerDiv button {
+  border-left: 1px solid #bbb;
+  height: 50%;
+
+}
+
+.datePicker {
+  text-align: center;
+  border-bottom-left-radius: 10px;
+
+}
+
+.datePicker:hover {
+  color: blue;
+  cursor: pointer;
+
+}
+
+.span {
+  all: unset;
+  background-color: rgba(255, 255, 255, 0.129);
+  border: 2px solid rgba(255, 255, 255, 0.202);
+  border-radius: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+
+}
+
+.times {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 15%);
+  animation: fadeOut 3s;
+  background-color: rgba(255, 255, 255, 0.472);
+  border: 2px solid rgba(255, 255, 255, 0.202);
+  border-radius: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@keyframes fadeOut {
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+button:disabled {
+  cursor: not-allowed !important;
+}
+
+button:disabled:hover {
+  color: black
+}
+
+@media only screen and (max-width: 1300px) {
+  .react-calendar__tile:enabled {
+    font-size: 0.7rem;
+  }
+
+  .react-calendar__tile:enabled:hover {
+    transform: scale(1.2);
+    font-size: .6rem;
+  }
+}
+@media only screen and (max-width: 900px) {
+
+  .react-calendar__tile:enabled:hover {
+    line-height: 20px;
+   transform: scale(1.4);
+    font-size: .50rem;
+      }
+
+  .datePickerDiv button {
+    font-size: 1.6rem;
+
+  }
+
+} 
+@media only screen and (max-height: 830px) {
+  .react-calendar__tile {
+    min-height: 42px;
+    height: 7vh;
+
+  }
+
+  .react-calendar__tile:enabled:hover {
+    line-height: 12px;
+    transform: scale(1.6);
+    font-size: .45rem;
+  }
+}
+
