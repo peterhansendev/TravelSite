@@ -334,18 +334,19 @@ input:focus {
 @media (max-width: 450px) {
   .asideAfter {
     grid-template-columns: none;
-    grid-template-rows: 1fr 1fr;
   }
 
   .info-display {
     grid-column-start: 1;
     grid-row-start: 2;
+    
   }
 
   .searched,
   .searchedActive {
     grid-column-start: 1;
     grid-row-start: 1;
+    grid-row-end: 3;
   }
 
   aside img {

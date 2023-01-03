@@ -68,6 +68,7 @@ body::-webkit-scrollbar {
 
   .title {
     font-size: 5rem;
+     margin-top: 20px;
   }
 }
 

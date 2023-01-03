@@ -56,10 +56,11 @@
   width: 25px;
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1400px) {
   .carousel {
     width: 65vw !important;
     height: 50vh;
+    min-height: 310px;
   }
 
   .carousel img {
