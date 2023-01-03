@@ -216,7 +216,7 @@ button:disabled:hover {
   }
 
   .react-calendar__tile {
-    height: 4.5vh;
+    height: 6vh;
    
   }
 
@@ -243,7 +243,6 @@ button:disabled:hover {
 @media only screen and (max-height: 830px) {
   .react-calendar__tile {
     min-height: 35px;
-  
 
   }
   .react-calendar__month-view__days {
@@ -263,14 +262,8 @@ button:disabled:hover {
   }
 
   .react-calendar__tile {
-    justify-content: center;
-    align-items: center;
-    line-height: 0;
-    min-height: 0;
-    height:3vh;
-    color: black;
-    background: rgba(165, 231, 255, 0.9);
-    border-radius: 50px;
+    height: 4.3vh;
+   
   }
 
   .react-calendar__navigation button {
