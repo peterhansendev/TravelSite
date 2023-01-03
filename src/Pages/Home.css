@@ -77,5 +77,6 @@ body::-webkit-scrollbar {
     align-items: center;
     width: 76%;
     margin-bottom: 10px;
+    margin-top: -10px;
   }
 }
