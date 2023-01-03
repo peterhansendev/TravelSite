@@ -24,6 +24,7 @@ body::-webkit-scrollbar {
 
 .carousel-main {
   margin: auto;
+  min-height: 300px;
 }
 
 .title {
@@ -76,8 +77,6 @@ body::-webkit-scrollbar {
   .main-bottom {
     flex-direction: column;
     align-items: center;
-    width: 76%;
-    margin-bottom: 10px;
-    
+    width: 76%;  
   }
 }
