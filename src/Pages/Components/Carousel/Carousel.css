@@ -71,13 +71,12 @@
 @media (max-width: 530px) {
   .carousel {
     height: 28vh;
-    width: 80vw !important;
+    width: 90vw !important;
   }
 
-
-.close-btn {
-  font-size: 1.5rem;
-  margin-left: 87%;
-  margin-top: 8px;
-}
+  .close-btn {
+    font-size: 1.5rem;
+    margin-left: 87%;
+    margin-top: 8px;
+  }
 }
