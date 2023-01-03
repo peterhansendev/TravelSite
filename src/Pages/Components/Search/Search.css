@@ -172,8 +172,8 @@ aside img {
 }
 
 .modal-going {
-  width: 18vw;
-  min-width: 300px;
+  width: 100%;
+  min-width: 350px;
   margin: auto;
   background-color: white;
   height: 110px;
@@ -188,7 +188,7 @@ aside img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 60%;
+  width: 50%;
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
 

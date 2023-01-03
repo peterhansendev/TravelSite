@@ -1,6 +1,7 @@
 main {
     height: 100vh;
     width: 100vw;
+    min-width: 320px;
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -31,7 +32,7 @@ body::-webkit-scrollbar {
 .title {
     font-family: 'Dancing Script', cursive;
     color: white;
-    font-size: 12rem;
+    font-size: 13rem;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -46,13 +47,15 @@ body::-webkit-scrollbar {
     display: flex;
     justify-content: center;
     z-index: 1;
+    width: 50%;
+    align-self: center;
+    
   
 }
 
 @media only screen and (min-height: 800px) {
 
     .nav {
-
         margin-top: 2%;
         margin-bottom: 2%;
         height: 96%;
@@ -60,7 +63,6 @@ body::-webkit-scrollbar {
 
     .main-bottom {
         margin-top: 0px;
-
     }
 
 }
@@ -76,3 +78,11 @@ body::-webkit-scrollbar {
         font-size: 6rem;
     }
 }
+
+@media (max-width: 450px) {
+    .main-bottom {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+  }

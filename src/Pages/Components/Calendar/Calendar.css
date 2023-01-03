@@ -112,12 +112,11 @@
 
 
 .inputForm {
-  width: 23vw;
+  width: 100%;
   min-width: 350px;
   background-color: white;
   height: 110px;
-  border-bottom-right-radius: 10px;
-  border-top-right-radius: 10px;
+ 
 
 }
 
