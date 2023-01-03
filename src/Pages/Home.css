@@ -68,8 +68,6 @@ body::-webkit-scrollbar {
 
   .title {
     font-size: 5rem;
-   
-  
   }
 }
 
@@ -78,5 +76,6 @@ body::-webkit-scrollbar {
     flex-direction: column;
     align-items: center;
     width: 76%;
+    margin-bottom: 10px;
   }
 }

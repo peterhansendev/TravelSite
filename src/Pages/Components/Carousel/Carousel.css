@@ -11,9 +11,9 @@
     top: 50%;
     left: -200%;
     transform: translate(-500%, 0%);
-  
   }
-  to {}
+  to {
+  }
 }
 
 .delay {
@@ -21,7 +21,8 @@
 }
 
 @keyframes superman-fly-out {
-  from {}
+  from {
+  }
 
   to {
     top: 50%;
@@ -30,14 +31,10 @@
   }
 }
 
-
-
 .carousel {
   width: 50vw !important;
   height: 50vh;
-  min-width: 450px;
   border-radius: 40px;
-  min-height: 300px;
   border: 2px solid black;
 }
 
@@ -59,17 +56,20 @@
   width: 25px;
 }
 
-
 @media only screen and (max-width: 1300px) {
   .carousel {
     width: 65vw !important;
     height: 50vh;
-   
   }
-  
+
   .carousel img {
-  
     width: 65vw !important;
     height: 50vh;
+  }
+}
+
+@media (max-width: 530px) {
+  .carousel {
+    height: 25vh;
   }
 }
