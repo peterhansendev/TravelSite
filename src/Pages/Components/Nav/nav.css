@@ -47,3 +47,13 @@
         margin: 5px;
     }
   }
+
+  @media (max-width: 530px) {
+    #h1 {
+        width: 90px;
+        height: 55px;
+        margin-bottom: -6px;
+    left: -2%;
+    }
+  }
+  
