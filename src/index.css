@@ -6,7 +6,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   
   background: url('beach-ge201e5173_1280 copy.jpg')  no-repeat center center fixed;
- 
   background-size: cover;
 }
 
@@ -21,5 +20,4 @@ code {
 *{
   margin: 0;
   padding: 0;
-
  }

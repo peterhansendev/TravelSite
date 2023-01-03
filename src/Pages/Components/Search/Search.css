@@ -14,11 +14,14 @@
   border: 2px solid #000;
   border-radius: 10px;
   padding: 10px;
-  
 }
 
 .MuiModal-root {
-  background: radial-gradient(circle, rgba(177, 177, 177, 0.3) 0%, rgba(38, 38, 38, 0.3) 40%);
+  background: radial-gradient(
+    circle,
+    rgba(177, 177, 177, 0.3) 0%,
+    rgba(38, 38, 38, 0.3) 40%
+  );
 }
 
 .no-box {
@@ -47,7 +50,6 @@
   border: black 3px solid;
   width: 75vw;
   height: 70vh;
-  
 }
 
 aside img {
@@ -118,9 +120,11 @@ aside img {
   height: 65px;
   background-color: rgb(173, 216, 430);
   justify-content: center;
-  background: radial-gradient(100% 48% at bottom,
-      transparent 50%,
-      rgb(173, 216, 430) 51%);
+  background: radial-gradient(
+    100% 48% at bottom,
+    transparent 50%,
+    rgb(173, 216, 430) 51%
+  );
 }
 
 .searched,
@@ -147,7 +151,6 @@ aside img {
 
 .searched {
   border: 2px solid rgb(173, 216, 430);
-
 }
 
 .searchedActive {
@@ -163,12 +166,13 @@ aside img {
   align-self: flex-end;
   font-weight: bold;
   background: rgb(5, 245, 255);
-  background: linear-gradient(90deg,
-      rgb(93, 206, 530) 0%,
-      rgba(20, 139, 355, 1) 35%,
-      rgb(93, 206, 530) 100%);
+  background: linear-gradient(
+    90deg,
+    rgb(93, 206, 530) 0%,
+    rgba(20, 139, 355, 1) 35%,
+    rgb(93, 206, 530) 100%
+  );
   cursor: pointer;
-
 }
 
 .modal-going {
@@ -183,7 +187,6 @@ aside img {
   border-top-left-radius: 11px;
 }
 
-
 .going {
   display: flex;
   flex-direction: column;
@@ -191,14 +194,15 @@ aside img {
   width: 50%;
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
-
 }
 
 .modal-btn {
   background-color: rgb(27, 74, 232);
-  background-image: linear-gradient(180deg,
-      rgba(255, 255, 255, 0.15),
-      rgba(255, 255, 255, 0));
+  background-image: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0)
+  );
   color: #ffffff;
   cursor: pointer;
   font-family: Inter, sans-serif;
@@ -214,7 +218,6 @@ aside img {
   height: 100%;
   /* border-bottom-left-radius: 10px;
   border-top-left-radius: 10px; */
-
 }
 
 .modal-btn:hover {
@@ -225,7 +228,9 @@ aside img {
 
 .modal-btn:focus {
   background-color: #413fc5;
-  border: 5px linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0)) solid;
+  border: 5px
+    linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0))
+    solid;
   box-shadow: rgba(255, 255, 255, 0.15) 0 1px 0 inset,
     rgba(46, 54, 80, 0.075) 0 1px 1px, rgba(104, 101, 235, 0.5) 0 0 0 0.2rem;
 }
@@ -233,7 +238,9 @@ aside img {
 .modal-btn:active {
   background-color: #3e3bba;
   background-image: none;
-  border: 5px linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0)) solid;
+  border: 5px
+    linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0))
+    solid;
   box-shadow: rgba(46, 54, 80, 0.125) 0 3px 5px inset;
 }
 
@@ -280,7 +287,6 @@ button {
   margin-top: 5px;
   margin-bottom: 5px;
   height: 25px;
-
 }
 
 input[type="text"] {
@@ -315,7 +321,7 @@ input:focus {
 @media screen and (max-width: 1000px) {
   .searched,
   .searchedActive {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 
   .asideAfter {
@@ -324,3 +330,43 @@ input:focus {
     height: 70vh;
   }
 }
+
+@media (max-width: 450px) {
+  .asideAfter {
+    grid-template-columns: none;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .info-display {
+    grid-column-start: 1;
+    grid-row-start: 2;
+  }
+
+  .searched,
+  .searchedActive {
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+
+  aside img {
+    width: 70vw;
+    height: 70vh;
+  }
+
+  .closeModal-btn {
+    right: 15px;
+    top: 15px;
+    height: 25px;
+    width: 25px;
+    font-size: 20px;
+    padding-bottom: 22px;
+  }
+
+  .displayInfoTitle {
+    padding-top: 10px;
+  }
+}
+
+/*
+
+*/
