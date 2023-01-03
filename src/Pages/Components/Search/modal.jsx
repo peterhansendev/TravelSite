@@ -1,8 +1,8 @@
 import * as React from "react";
 import { useState } from "react";
-import Box from "@mui/material/Box";
+import {Box} from "@mui/material";
 // Button from "@mui/material/Button";
-import Modal from "@mui/material/Modal";
+import {Modal} from "@mui/material";
 import "./Search.css";
 import { useGlobalContext } from "../../../context";
 import { AiOutlineSearch } from "react-icons/ai";

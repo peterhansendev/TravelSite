@@ -3,6 +3,7 @@ main {
     width: 100vw;
     display: flex;
     flex-direction: column;
+    margin: auto;
 }
 
 body::-webkit-scrollbar {
@@ -36,7 +37,7 @@ body::-webkit-scrollbar {
     left: 50%;
     transform: translate(-50%, -50%) rotate(-5deg);
     rotate: 10%;
-    width: 100%;
+    width: 90%;
     z-index: -1;
 }
 
@@ -68,6 +69,10 @@ body::-webkit-scrollbar {
 
     .main-bottom {
        transform: scale(.75);
-  font-size: 1.1rem;
+        font-size: 1.1rem;
+    }
+
+    .title {
+        font-size: 6rem;
     }
 }
