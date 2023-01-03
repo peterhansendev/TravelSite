@@ -46,12 +46,7 @@ function Calender() {
     }
     return () => clearTimeout(timeout);
   }, [showTime]);
-  /*
-  const trigger = () => {
-    setIsActive((current) => !current);
-    console.log(isActive);
-  };
-  */
+ 
 
   function OnClick() {
     setCalendar(!calendar);
