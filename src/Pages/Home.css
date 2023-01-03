@@ -41,7 +41,7 @@ body::-webkit-scrollbar {
 }
 
 .main-bottom {
-  margin-top: 5px;
+  margin-top: -5px;
   display: flex;
   justify-content: center;
   z-index: 1;
@@ -76,7 +76,7 @@ body::-webkit-scrollbar {
 
   .title {
     font-size: 7rem;
-     
+
   }
 }
 
