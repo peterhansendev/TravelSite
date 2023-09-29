@@ -112,6 +112,8 @@
   min-width: 350px;
   background-color: white;
   height: 110px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .addEvent {
@@ -282,3 +284,10 @@ button:disabled:hover {
   }
 }
 
+
+@media only screen and (max-height: 600px) {
+.inputForm {
+
+  height: 90px;
+}
+}

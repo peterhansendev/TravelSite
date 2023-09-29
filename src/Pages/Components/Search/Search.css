@@ -368,6 +368,10 @@ input:focus {
   }
 }
 
-/*
 
-*/
+@media only screen and (max-height: 600px) {
+  .modal-going {
+ 
+    height: 90px;
+  }
+  }
